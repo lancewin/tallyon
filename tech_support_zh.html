@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>技术支持 · 超能打卡清单（Tallyon）</title>
+<style>
+  :root{ --brand:#F4552B; --text:#1C1C1E; --sub:#6E6E73; --line:#E5E5EA; --bg:#FFFFFF; --card:#F5F5F7; }
+  @media (prefers-color-scheme: dark){
+    :root{ --text:#F2F2F7; --sub:#9A9AA0; --line:#2C2C2E; --bg:#0F0F12; --card:#1C1C1E; }
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0 auto; max-width:760px; padding:20px 20px 48px; background:var(--bg); color:var(--text);
+    font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;
+    -webkit-text-size-adjust:100%;
+  }
+  h1{ font-size:24px; line-height:1.3; margin:0 0 6px; }
+  .updated{ color:var(--sub); font-size:13px; margin:0 0 26px; }
+  h2{ font-size:17px; margin:28px 0 8px; }
+  p{ margin:0 0 12px; color:var(--sub); }
+  ul{ margin:0 0 12px; padding-left:20px; color:var(--sub); }
+  li{ margin:0 0 8px; }
+  strong{ color:var(--text); }
+  .card{ margin-top:30px; padding:16px; background:var(--card); border-radius:14px; }
+  .card h3{ margin:0 0 6px; font-size:16px; }
+  a{ color:var(--brand); text-decoration:none; }
+</style>
+</head>
+<body>
+
+<h1>技术支持</h1>
+<p class="updated">2026-10-08 更新</p>
+
+<h2>提醒没有按时响</h2>
+<ul>
+  <li>检查系统是否给了通知权限：设置 → 通知 → 超能打卡清单（Tallyon）。</li>
+  <li>关闭「专注模式 / 勿扰模式」，或把本应用加入允许列表。</li>
+  <li>当天目标已达成时，应用会<strong>自动静音当天剩余提醒</strong>（这是设计如此，避免重复打扰）。</li>
+  <li>确认「我的 → 通知总开关」没有被关掉。</li>
+</ul>
+
+<h2>换设备后数据没同步</h2>
+<ul>
+  <li>在两台设备的「设置」里登录同一个 Apple ID 并开启 iCloud。</li>
+  <li>在「我的 → iCloud 同步」手动触发一次。</li>
+  <li>同步以最后写入为准，不做冲突合并；如果另一端是更新版本写的，本机读不出来时会保留原样不覆盖。</li>
+</ul>
+
+<h2>订阅恢复</h2>
+<ul>
+  <li>「我的 → 升级 Pro → 恢复购买」，用同一 Apple ID 恢复即可，不会重复扣费。</li>
+  <li>若提示找不到购买记录，请确认登录的是购买时用的那个 Apple ID。</li>
+  <li>取消续订：iOS「设置 → Apple 账户 → 订阅」中选择本应用并取消。</li>
+</ul>
+
+<h2>桌面小组件 / 锁屏实时活动没有出现</h2>
+<ul>
+  <li>小组件需要 iOS 16.2 及以上，长按主屏幕 → 左上角 ➕ → 搜索本应用添加。</li>
+  <li>添加后若一直空白，打开一次 App 即可刷新数据。</li>
+</ul>
+
+<h2>日历同步没有写入 Apple 日历</h2>
+<p>首次使用会申请日历权限；若之前拒绝过，请到系统「设置 → 隐私与安全性 → 日历」重新打开。</p>
+
+<h2>数据导出或备份</h2>
+<p>本应用不提供数据导出；数据保存在本机与你的 iCloud 中，可用 iPhone 的系统备份覆盖。</p>
+
+<div class="card">
+  <h3>联系我们</h3>
+  <p>发邮件给我们：<a href="mailto:lancewin@foxmail.com">lancewin@foxmail.com</a></p>
+  <p>为便于定位问题，请附上：设备型号、iOS 版本、App 版本，以及问题出现的步骤。</p>
+</div>
+
+</body>
+</html>
